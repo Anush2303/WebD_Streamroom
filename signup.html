@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Signup Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="signupstyle.css">
+    <link rel="stylesheet" href="bootstrap-social.css">
+    <link rel="stylesheet" href="styling/all.css">
+</head>
+<body>
+  
+  <div class="container">
+    <h2>SIGN UP</h2>
+      <form action="/signup" method="post">
+         
+          <div class="input-container">
+              <i class="fa fa-user icon"></i>
+              <input type="text" name="username" class="input" placeholder="Username">
+          </div>
+          <div class="input-container">
+            <i class="fas fa-envelope"></i>
+            <input type="email" name="email" class="input" placeholder="Email">
+        </div>
+          <div class="input-container">
+            <i class="fa fa-key icon"></i>
+            <input type="password" name="password" class="input" id="pass" placeholder="Password">
+            <i class="fas fa-eye"></i>
+        </div>
+       
+        <div class="submit">
+            <button type="submit" value="SIGN UP">SIGNUP</button>
+        </div>
+      </form>
+      <p><a>FORGOT PASSWORD?</a></p>
+        &emsp;
+        &emsp;
+        &emsp;
+        &emsp;
+        &emsp;
+        &emsp;
+
+          
+      <p class="para"><a href="/login">ALREADY REGISTERED? LOGIN</a></p>
+      <br>
+       <br>
+      
+     
+   <!--<p>or Signup using:</p>
+   <div class="icons"></div>
+   <i class="fab fa-facebook-square fa-2x" ></i>
+   <i class="fab fa-twitter-square fa-2x"></i>
+   <i class="fab fa-google-plus-square fa-2x"></i>
+   </div>  --> 
+    <div class="col-sm-8">
+      <div class="card social-block">
+        <div class="card-body">
+          <a class="btn btn-block btn-social btn-google" href="/auth/google" role="button">
+              <i class="fab fa-google"></i>
+            Sign Up with Google
+          </a>
+        </div>
+      </div>
+    </div> 
+    <br>
+      <div class="col-sm-8">
+      <div class="card social-block">
+        <div class="card-body">
+          <a class="btn btn-block btn-social btn-facebook" href="/auth/google" role="button">
+              <i class="fab fa-facebook"></i>
+            Sign Up with Facebook
+          </a>
+        </div>
+      </div>
+    </div> 
+    <br>
+      <!--<div class="col-sm-8">
+      <div class="card social-block">
+        <div class="card-body">
+          <a class="btn btn-block btn-social btn-twitter" href="/auth/google" role="button">
+              <i class="fab fa-twitter"></i>
+            Sign Up with Twitter
+          </a>
+        </div>
+      </div>
+    </div>-->
+  </div>
+  <script src="mainsignup.js"></script>
+</body>
+</html>

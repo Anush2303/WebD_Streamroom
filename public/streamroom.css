@@ -1,0 +1,106 @@
+.container-fluid h1{
+color: white;
+font-size:45px;
+margin-right:700px;
+font-family: "Audiowide", sans-serif;
+}
+a .nav-brand{
+    font-size:32px;
+    color:white;
+}
+.navbar-brand>img {
+  height: 80px;
+  width:100px;
+  border-radius:30%;
+  color:red;
+}
+body{
+    width:100%;
+    height:100%;
+    background-color: black;
+    background-image: linear-gradient(to right,black,black,#646464);
+    
+}
+.top{
+    margin-top:45px;
+}
+.content p{
+    color:white;
+    margin-left:100px;
+    padding:10px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 60px;
+}
+.subheading p{
+    color: #E1D5D4;
+    font-size:26px;
+}
+.poster{
+position: absolute;
+width: 450px;
+height: 260px;
+margin-left: 970px;
+top: 220px;
+object-fit:cover;
+background: url("images/post.jpg");
+border-radius: 48px;
+}
+.gallery{
+margin: 4% auto;
+margin-left:650px;
+margin-top:140px;
+width: 210px;
+height: 280px;
+position: absolute;
+perspective: 1000px;
+}
+#carousel{
+width: 100%;
+height: 100%;
+position: absolute;
+transform-style: preserve-3d;
+animation: rotation 20s infinite linear;
+}
+#carousel:hover{
+animation-play-state: paused;
+}
+#carousel figure{
+display: block;
+position: absolute;
+width: 90%;
+height: 78%;
+left: 10px;
+top: 10px;
+background: black;
+overflow: hidden;
+border: solid 5px black;
+}
+#carousel figure:nth-child(1) {transform: rotateY(0deg) translateZ(288px);}
+#carousel figure:nth-child(2) { transform: rotateY(40deg) translateZ(288px);}
+#carousel figure:nth-child(3) { transform: rotateY(80deg) translateZ(288px);}
+#carousel figure:nth-child(4) { transform: rotateY(120deg) translateZ(288px);}
+#carousel figure:nth-child(5) { transform: rotateY(160deg) translateZ(288px);}
+#carousel figure:nth-child(6) { transform: rotateY(200deg) translateZ(288px);}
+#carousel figure:nth-child(7) { transform: rotateY(240deg) translateZ(288px);}
+#carousel figure:nth-child(8) { transform: rotateY(280deg) translateZ(288px);}
+#carousel figure:nth-child(9) { transform: rotateY(320deg) translateZ(288px);}
+#carousel figure:nth-child(10){ transform: rotateY(360deg)translateZ(288px);}
+#carousel img{
+
+cursor: pointer;
+transition: all .5s ease;
+width:100%;
+}
+
+
+@keyframes rotation{
+from{
+transform: rotateY(0deg);
+}
+to{
+transform: rotateY(360deg);
+}
+}
