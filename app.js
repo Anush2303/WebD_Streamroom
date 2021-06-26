@@ -79,7 +79,7 @@ app.get("/login",function(req,res){
 });
 app.get("/landingpage",function(req,res){
     if(req.isAuthenticated()){
-          res.sendFile('/landingpage.html',{root:__dirname});
+          res.sendFile('/index1.html',{root:__dirname});
 }
     else{
         res.redirect("/login");
